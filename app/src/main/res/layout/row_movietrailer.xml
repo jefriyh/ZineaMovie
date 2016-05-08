@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="match_parent"
+        android:layout_margin="@dimen/activity_vertical_margin"
+
+        android:layout_height="1dp"
+        android:background="#4e4e4e" />
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:weightSum="100"
+        android:layout_gravity="left"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_weight="40"
+            android:id="@+id/imageView"
+
+            android:layout_width="0dp"
+
+            android:layout_height="fill_parent"
+            android:src="@drawable/trailer"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:lines="3"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Large Text"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/trailer_title" />
+
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:id="@+id/line"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:visibility="gone"
+        android:layout_height="1dp"
+        android:background="#4e4e4e" />
+
+
+    </LinearLayout>
+

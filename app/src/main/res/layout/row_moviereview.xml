@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/imageView"
+           android:adjustViewBounds="true"
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <View android:layout_width="match_parent"
+        android:layout_margin="@dimen/activity_vertical_margin"
+
+        android:layout_height="1dp"
+        android:background="#4e4e4e" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Author"
+        android:id="@+id/author" />
+
+    <com.bluejamesbond.text.DocumentView
+        xmlns:ext="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/movie_review"
+        android:layout_width="match_parent"
+        ext:documentView_textAlignment="justified"
+        ext:documentView_insetPadding="@dimen/activity_vertical_margin"
+        ext:documentView_textColor="@android:color/black"
+        ext:documentView_textFormat="plain"
+        ext:documentView_textSize="@dimen/text16"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
